@@ -1,6 +1,9 @@
 .container{
-	box-shadow: 0px 0px 10px #999;
-	margin: 20px auto;
+	box-shadow: 0px 0px 10px #999;margin: 20px auto;box-shadow: 0px 0px 10px #999;
+	margin: 20px auto;background-image: url(../images/bg.jpg);background-size: 100%;
+}
+.container2{
+	height:500px;
 }
 h1{
 	margin: 0;
@@ -8,4 +11,95 @@ h1{
 	font-size: 35px;
 	color: #ff1600;
 	text-align: center;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* 3d*/
+.dg-wrapper a img{
+	padding: 0;
+} 
+.dg-wrapper a{
+	box-shadow: none;
+}
+.3dcarousel a:nth-of-type(1),.3dcarousel a:nth-of-type(6),.3dcarousel a:nth-of-type(7){
+	opacity: 0; 
+	visibility: hidden;
+}
+.3dcarousel a:nth-of-type(2){
+	opacity: 1; 
+	visibility: visible; 
+	transform: translateX(-350px) translateZ(-200px) rotateY(45deg);
+}
+.3dcarousel a:nth-of-type(3){
+	opacity: 1; 
+	visibility: visible; 
+	transform: translateX(0px) translateZ(0px) rotateY(0deg);
+}
+.3dcarousel a:nth-of-type(4){
+	opacity: 1; 
+	visibility: visible; 
+	transform: translateX(350px) translateZ(-200px) rotateY(-45deg);
+                            
+}
+.3dcarousel a:nth-of-type(5),.3dcarousel a:nth-of-type(8),.3dcarousel a:nth-of-type(9),.3dcarousel a:nth-of-type(10){
+	opacity: 0; 
+	visibility: hidden; 
+	transform: translateX(450px) translateZ(-300px) rotateY(-45deg);
+                            
+}
+
+/* 无缝 */
+.box{
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.box .content_box{
+	width: 2500px;
+	height:100%;
+	position: absolute;
+	left: 0;
+}
+.box .content_box .content{
+	float: left;
+}
+.arrow{
+	position: absolute;
+	top: 50%;
+	margin-top: -71px;
+	font-size: 100px;
+	color: #fff;
+	cursor: pointer;
+}
+.arrow_prew{
+	left:0;
+}
+.arrow_next{
+	right: 0;
+}
+.btnbox{
+	width: 176px;
+	height: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -88px;
+}
+.btnbox ul li{
+	width: 15px;
+	height: 15px;
+	background: #000;
+	border: 1px solid #fff;
+	float: left;
+	margin: 0 10px;
+	border-radius: 50%;
+	list-style: none;
+}
+.btnbox ul li.thisbtn{
+	background: #fff;
 }
